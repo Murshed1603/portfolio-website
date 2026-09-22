@@ -8,8 +8,9 @@ Featuring a smooth 60fps/120fps hardware-accelerated scroll-scrubbed canvas back
 
 ## 🚀 Live Demo
 
+- **Live Website**: [https://portfolio-website-murshed3.vercel.app](https://portfolio-website-murshed3.vercel.app)
 - **Local Development**: `http://localhost:3000/`
-- **Deployment Platform**: [Vercel](https://vercel.com)
+
 
 ---
 
