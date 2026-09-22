@@ -45,8 +45,8 @@ Featuring a smooth 60fps/120fps hardware-accelerated scroll-scrubbed canvas back
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/<your-username>/<your-repo-name>.git
-   cd <your-repo-name>
+   git clone https://github.com/Murshed1603/portfolio-website.git
+   cd portfolio-website
    ```
 
 2. **Start the local server**:
@@ -76,5 +76,7 @@ Featuring a smooth 60fps/120fps hardware-accelerated scroll-scrubbed canvas back
 
 ## 📬 Contact & Connect
 
+- **GitHub**: [github.com/Murshed1603](https://github.com/Murshed1603)
 - **Email**: [murshedahmedibrahim2001@gmail.com](mailto:murshedahmedibrahim2001@gmail.com)
 - **Institution**: American International University - Bangladesh (AIUB)
+
