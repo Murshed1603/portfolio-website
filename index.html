@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Murshed Ahmed — CSE Undergrad & Software Engineer</title>
+  <meta name="description" content="Portfolio of Murshed Ahmed, an undergraduate student in Computer Science & Engineering (Major in Software Engineering) at American International University - Bangladesh (AIUB).">
+  
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2245%22 fill=%22%23ff4d29%22/><text x=%2250%22 y=%2262%22 font-size=%2236%22 font-weight=%22bold%22 fill=%22white%22 text-anchor=%22middle%22 font-family=%22sans-serif%22>M</text></svg>">
+</head>
+<body>
+  <!-- Minimalist Loading Indicator -->
+  <div id="loader" class="loader-bar" aria-hidden="true"></div>
+
+  <!-- Background Fixed Canvas for 300-Frame Scroll Animation -->
+  <div id="canvas-container">
+    <canvas id="canvas"></canvas>
+    <!-- Cinematic Vignette Overlay to ensure razor-sharp typography contrast -->
+    <div class="canvas-vignette"></div>
+  </div>
+
+  <!-- Main Website Content Overlay -->
+  <div id="page-content">
+    
+    <!-- Top Navigation -->
+    <header class="navbar-wrapper">
+      <nav class="navbar">
+        <a href="#home" class="brand-logo">
+          <span>Murshed Ahmed</span>
+          <span class="brand-tag">AIUB CSE</span>
+        </a>
+
+        <div class="nav-links">
+          <a href="#home" class="nav-link">Home</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#education" class="nav-link">Education</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#achievements" class="nav-link">Achievements</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </div>
+
+        <a href="mailto:murshedahmedibrahim2001@gmail.com" class="btn-pill btn-white">
+          <span>Get in touch</span>
+          <span class="btn-icon">
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+              <path d="M3.33337 8H12.6667M12.6667 8L8.66671 4M12.6667 8L8.66671 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </a>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+      <div class="hero-main-row">
+        
+        <!-- Left: Hero Headline -->
+        <div class="hero-left">
+          <p class="hero-eyebrow">Hey, I'm</p>
+          <h1 class="hero-title">Murshed<br>Ahmed</h1>
+          <p class="hero-role-badge">Undergraduate CSE Student & Aspiring Software Engineer</p>
+        </div>
+
+        <!-- Right: Quote and Bio Statement -->
+        <div class="hero-right">
+          <h2 class="hero-quote">Building efficient software that solves real-world problems.</h2>
+          <p class="hero-desc">Undergraduate in Computer Science & Engineering (Major in Software Engineering) at American International University - Bangladesh (AIUB). Passionate about scalable web applications, enterprise desktop systems, and modern computing.</p>
+        </div>
+      </div>
+
+      <!-- Bottom: 4 Numbered Capabilities / Focus Areas -->
+      <div class="hero-services-grid">
+        <div class="service-item">
+          <span class="service-num">// 01</span>
+          <h3 class="service-title">Software Engineering</h3>
+          <p class="service-detail">OOP, System Design & Clean Architecture</p>
+        </div>
+        <div class="service-item">
+          <span class="service-num">// 02</span>
+          <h3 class="service-title">Full-Stack & APIs</h3>
+          <p class="service-detail">NestJS, TypeScript, Node.js & Modern Web</p>
+        </div>
+        <div class="service-item">
+          <span class="service-num">// 03</span>
+          <h3 class="service-title">Database Systems</h3>
+          <p class="service-detail">PostgreSQL, MySQL, Oracle & Relational Modeling</p>
+        </div>
+        <div class="service-item">
+          <span class="service-num">// 04</span>
+          <h3 class="service-title">Data Science & Analytics</h3>
+          <p class="service-detail">R Programming, EDA & Data Preprocessing</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Stats Counter Strip -->
+    <section class="stats-section">
+      <div class="stats-grid">
+        <div class="stat-card">
+          <span class="stat-number">AIUB</span>
+          <span class="stat-label">B.Sc. in CSE (Major: Software Engineering)</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">3.33 <small>/ 4.00</small></span>
+          <span class="stat-label">Academic CGPA (2023 – Present)</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">5+</span>
+          <span class="stat-label">Full-Stack & Systems Academic Projects</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">7+</span>
+          <span class="stat-label">Core Languages (C++, Python, Java, C#, TS, R, JS)</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Core Tech Stack Bar -->
+    <section class="brands-section">
+      <div class="brands-bar">
+        <span class="brands-label">Core Technologies & Environments</span>
+        
+        <div class="brands-list">
+          <div class="brand-item">
+            <svg class="brand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/>
+            </svg>
+            <span>TypeScript / NestJS</span>
+          </div>
+
+          <div class="brand-item">
+            <svg class="brand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+              <line x1="8" y1="21" x2="16" y2="21"/>
+              <line x1="12" y1="17" x2="12" y2="21"/>
+            </svg>
+            <span>C# / .NET & C++</span>
+          </div>
+
+          <div class="brand-item">
+            <svg class="brand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <ellipse cx="12" cy="5" rx="9" ry="3"/>
+              <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/>
+              <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
+            </svg>
+            <span>PostgreSQL & Oracle</span>
+          </div>
+
+          <div class="brand-item">
+            <svg class="brand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="3"/>
+              <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+            </svg>
+            <span>Linux & Git</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Deep "About My Journey" Section -->
+    <section id="about" class="about-section">
+      <div class="section-container">
+        <div class="about-grid">
+          <div class="about-left">
+            <span class="section-tag">About My Journey</span>
+            <h2 class="section-title">Bridging Theory & Practical Software Systems</h2>
+            <p class="about-lead">I am an undergraduate student in Computer Science and Engineering with a deep-seated enthusiasm for engineering robust, reliable, and scalable software solutions.</p>
+            <p class="about-body">My academic journey at AIUB has shaped a disciplined foundation across data structures, algorithms, object-oriented design, database architectures, and software engineering methodologies. I genuinely enjoy taking conceptual paradigms and turning them into working applications that solve tangible problems.</p>
+            
+            <div class="soft-skills-box">
+              <h4 class="soft-skills-title">Core Competencies & Soft Skills</h4>
+              <div class="soft-skills-tags">
+                <span class="soft-tag">Team Collaboration</span>
+                <span class="soft-tag">Critical Problem Solving</span>
+                <span class="soft-tag">Time Management</span>
+                <span class="soft-tag">Adaptability</span>
+                <span class="soft-tag">Technical Communication</span>
+                <span class="soft-tag">Systematic Debugging</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-right">
+            <div class="info-card">
+              <div class="info-card-header">
+                <span class="info-icon">⚡</span>
+                <h3 class="info-title">Engineering Focus</h3>
+              </div>
+              <p class="info-desc">Dedicated to mastering backend system architecture, API design, clean code practices, and exploring how modern microservices and data pipelines can be crafted with maximum resilience and performance.</p>
+            </div>
+
+            <div class="info-card">
+              <div class="info-card-header">
+                <span class="info-icon">🌐</span>
+                <h3 class="info-title">Language Proficiency</h3>
+              </div>
+              <div class="lang-list">
+                <div class="lang-item">
+                  <span class="lang-name">English</span>
+                  <span class="lang-level">Professional Spoken & Written</span>
+                </div>
+                <div class="lang-item">
+                  <span class="lang-name">Bangla</span>
+                  <span class="lang-level">Native Spoken & Written</span>
+                </div>
+                <div class="lang-item">
+                  <span class="lang-name">Hindi</span>
+                  <span class="lang-level">Conversational Spoken</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Timeline Section -->
+    <section id="education" class="education-section">
+      <div class="section-container">
+        <div class="section-header-centered">
+          <span class="section-tag">Academic Background</span>
+          <h2 class="section-title">Educational Milestones</h2>
+          <p class="section-lead-centered">A consistent trajectory of academic dedication in science and computer engineering.</p>
+        </div>
+
+        <div class="timeline-container">
+          
+          <!-- Timeline Item 1: AIUB -->
+          <div class="timeline-item">
+            <div class="timeline-badge">2023 – Present</div>
+            <div class="timeline-content">
+              <div class="timeline-top">
+                <h3 class="timeline-degree">Bachelor of Science in Computer Science & Engineering (B.Sc. CSE)</h3>
+                <span class="timeline-score">CGPA 3.33 / 4.00</span>
+              </div>
+              <h4 class="timeline-institution">American International University - Bangladesh (AIUB)</h4>
+              <p class="timeline-meta"><strong>Major:</strong> Software Engineering | <strong>Department:</strong> CSE</p>
+              <p class="timeline-desc">Extensive academic curriculum covering Data Structures, Algorithms, Object-Oriented Analysis & Design, Database Management Systems, Software Engineering, Advanced Web Technologies, and Computer Networks.</p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2: Govt Science College -->
+          <div class="timeline-item">
+            <div class="timeline-badge">2021</div>
+            <div class="timeline-content">
+              <div class="timeline-top">
+                <h3 class="timeline-degree">Higher Secondary Certificate (HSC)</h3>
+                <span class="timeline-score">GPA 4.83 / 5.00</span>
+              </div>
+              <h4 class="timeline-institution">Government Science College, Dhaka</h4>
+              <p class="timeline-meta"><strong>Group:</strong> Science | <strong>Board:</strong> Dhaka</p>
+              <p class="timeline-desc">Strong grounding in advanced mathematics, physics, and chemistry, cultivating deep analytical and mathematical problem-solving skills.</p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3: Bindubasini -->
+          <div class="timeline-item">
+            <div class="timeline-badge">2019</div>
+            <div class="timeline-content">
+              <div class="timeline-top">
+                <h3 class="timeline-degree">Secondary School Certificate (SSC)</h3>
+                <span class="timeline-score perfect-score">GPA 5.00 / 5.00</span>
+              </div>
+              <h4 class="timeline-institution">Bindubasini Govt. Boys' High School</h4>
+              <p class="timeline-meta"><strong>Group:</strong> Science | <strong>Board:</strong> Dhaka</p>
+              <p class="timeline-desc">Graduated with a perfect 5.00 GPA, building fundamental academic discipline, curiosity in computing, and scientific inquiry.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Comprehensive Skills Matrix Section -->
+    <section id="skills" class="skills-matrix-section">
+      <div class="section-container">
+        <div class="section-header-centered">
+          <span class="section-tag">Technical Competencies</span>
+          <h2 class="section-title">Specialized Skills & Toolset</h2>
+          <p class="section-lead-centered">A structured overview of programming languages, frameworks, databases, and development environments I use.</p>
+        </div>
+
+        <div class="skills-grid">
+          
+          <!-- Category 1: Languages -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <span class="skill-cat-icon">💻</span>
+              <h3 class="skill-cat-title">Programming Languages</h3>
+            </div>
+            <div class="skill-chips">
+              <span class="chip">C++</span>
+              <span class="chip">Python</span>
+              <span class="chip">Java</span>
+              <span class="chip">C# (.NET)</span>
+              <span class="chip">TypeScript</span>
+              <span class="chip">JavaScript</span>
+              <span class="chip">R Language</span>
+            </div>
+          </div>
+
+          <!-- Category 2: Web & Backend -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <span class="skill-cat-icon">🚀</span>
+              <h3 class="skill-cat-title">Web & Backend Frameworks</h3>
+            </div>
+            <div class="skill-chips">
+              <span class="chip">NestJS</span>
+              <span class="chip">Node.js</span>
+              <span class="chip">RESTful APIs</span>
+              <span class="chip">HTML5</span>
+              <span class="chip">CSS3</span>
+              <span class="chip">MVC Architecture</span>
+              <span class="chip">JSON Web Tokens</span>
+            </div>
+          </div>
+
+          <!-- Category 3: Databases & Systems -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <span class="skill-cat-icon">🗄️</span>
+              <h3 class="skill-cat-title">Database Systems & Data</h3>
+            </div>
+            <div class="skill-chips">
+              <span class="chip">PostgreSQL</span>
+              <span class="chip">Oracle Database</span>
+              <span class="chip">MySQL</span>
+              <span class="chip">Relational Schemas</span>
+              <span class="chip">Data Preprocessing</span>
+              <span class="chip">Exploratory Data Analysis</span>
+              <span class="chip">ggplot2</span>
+            </div>
+          </div>
+
+          <!-- Category 4: Tools & OS -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <span class="skill-cat-icon">🛠️</span>
+              <h3 class="skill-cat-title">Environments & Platforms</h3>
+            </div>
+            <div class="skill-chips">
+              <span class="chip">Ubuntu Linux</span>
+              <span class="chip">Kali Linux</span>
+              <span class="chip">Parrot OS</span>
+              <span class="chip">Windows</span>
+              <span class="chip">Git & GitHub</span>
+              <span class="chip">Git Bash</span>
+              <span class="chip">VS Code & Visual Studio</span>
+              <span class="chip">PyCharm & CodeBlocks</span>
+              <span class="chip">VMware Player</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects Section (5 Projects) -->
+    <section id="projects" class="projects-section">
+      <div class="section-container">
+        
+        <!-- Section Header Row -->
+        <div class="projects-header-row">
+          <div class="projects-header-left">
+            <span class="section-tag">Featured Projects</span>
+            <h2 class="section-title">Transforming Ideas into Functional Software & Intelligent Systems</h2>
+          </div>
+
+          <div class="projects-header-right">
+            <p class="section-lead">A showcase of full-stack web platforms, enterprise desktop software, and statistical data science pipelines created throughout my CSE journey.</p>
+            
+            <div class="projects-cta-box">
+              <span class="cta-subtitle">Check out repositories and open-source code on GitHub</span>
+              <a href="https://github.com/Murshed1603" target="_blank" rel="noopener noreferrer" class="btn-pill btn-orange">
+                <span>View GitHub</span>
+                <span class="btn-icon">
+                  <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+                    <path d="M3.33337 8H12.6667M12.6667 8L8.66671 4M12.6667 8L8.66671 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Cards Showcase Grid -->
+        <div class="cards-grid">
+          
+          <!-- Project 1: Gamer's United -->
+          <article class="project-card">
+            <div class="card-media">
+              <img src="assets/project-gamers-united.jpg" alt="Gamer's United Online Game Shopping System dashboard" loading="lazy">
+            </div>
+            <div class="card-content-overlay">
+              <div class="card-badge">Full-Stack Web Platform</div>
+              <h3 class="card-title">Gamer's United</h3>
+              <p class="card-desc">Advanced online game commerce platform built with NestJS and TypeScript, featuring secure transaction flows, role management, cart management, and game catalog browsing.</p>
+              <div class="card-tags">
+                <span class="tech-tag">NestJS</span>
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">REST API</span>
+                <span class="tech-tag">PostgreSQL</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Caffeine Shop -->
+          <article class="project-card">
+            <div class="card-media">
+              <img src="assets/project-caffeine-shop.jpg" alt="Caffeine Shop Coffee Management System application interface" loading="lazy">
+            </div>
+            <div class="card-content-overlay">
+              <div class="card-badge">Desktop & POS ERP Application</div>
+              <h3 class="card-title">Caffeine Shop</h3>
+              <p class="card-desc">Comprehensive desktop business management software developed in C# (.NET) covering point-of-sale operations, inventory tracking, pricing controls, and employee shift management.</p>
+              <div class="card-tags">
+                <span class="tech-tag">C#</span>
+                <span class="tech-tag">.NET Framework</span>
+                <span class="tech-tag">Desktop POS</span>
+                <span class="tech-tag">SQL Database</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: FIFA 2022 Data Analysis -->
+          <article class="project-card">
+            <div class="card-media">
+              <img src="assets/project-fifa-analysis.jpg" alt="FIFA World Cup 2022 player analytics dashboard" loading="lazy">
+            </div>
+            <div class="card-content-overlay">
+              <div class="card-badge">Data Science & Analytics</div>
+              <h3 class="card-title">FIFA 2022 Analytics</h3>
+              <p class="card-desc">Exploratory data analysis and preprocessing pipeline on FIFA World Cup player statistics in R, uncovering performance patterns through visual modeling and feature engineering.</p>
+              <div class="card-tags">
+                <span class="tech-tag">R Language</span>
+                <span class="tech-tag">EDA Pipeline</span>
+                <span class="tech-tag">Data Preprocessing</span>
+                <span class="tech-tag">ggplot2</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: Car Rental Management System -->
+          <article class="project-card">
+            <div class="card-media">
+              <img src="assets/project-car-rental.jpg" alt="FleetDrive Car Rental System UI" loading="lazy">
+            </div>
+            <div class="card-content-overlay">
+              <div class="card-badge">Enterprise Fleet System</div>
+              <h3 class="card-title">Car Rental Management</h3>
+              <p class="card-desc">Object-oriented fleet reservation and billing application managing vehicle availability, customer rental agreements, rate calculations, and maintenance scheduling.</p>
+              <div class="card-tags">
+                <span class="tech-tag">OOP</span>
+                <span class="tech-tag">Java / C#</span>
+                <span class="tech-tag">Database Modeling</span>
+                <span class="tech-tag">Software Architecture</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 5: Journey By Train -->
+          <article class="project-card">
+            <div class="card-media">
+              <img src="assets/project-train-journey.jpg" alt="Journey By Train Ticketing System UI" loading="lazy">
+            </div>
+            <div class="card-content-overlay">
+              <div class="card-badge">Systems & Algorithms</div>
+              <h3 class="card-title">Journey By Train</h3>
+              <p class="card-desc">Railway seat allocation and journey scheduling system implementing efficient search, coach seat layout mapping, and passenger ticketing workflows.</p>
+              <div class="card-tags">
+                <span class="tech-tag">C++</span>
+                <span class="tech-tag">Data Structures</span>
+                <span class="tech-tag">Algorithm Design</span>
+                <span class="tech-tag">Simulation</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Academic Achievements & Co-curricular -->
+    <section id="achievements" class="achievements-section">
+      <div class="section-container">
+        <div class="section-header-centered">
+          <span class="section-tag">Co-Curricular & Achievements</span>
+          <h2 class="section-title">Honors & Recognition</h2>
+          <p class="section-lead-centered">Recognition earned through academic presentations, technical projects, and coursework.</p>
+        </div>
+
+        <div class="achievements-grid">
+          
+          <div class="achievement-card">
+            <div class="achievement-icon-box">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="8" r="7"/>
+                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/>
+              </svg>
+            </div>
+            <div class="achievement-info">
+              <h3 class="achievement-title">Appraisal Certificate for Poster Presentation</h3>
+              <span class="achievement-sub">Bangladesh Studies Course • AIUB</span>
+              <p class="achievement-desc">Awarded an official certificate of appraisal for outstanding research and presentation in the academic poster showcase.</p>
+            </div>
+          </div>
+
+          <div class="achievement-card">
+            <div class="achievement-icon-box">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                <polyline points="22 4 12 14.01 9 11.01"/>
+              </svg>
+            </div>
+            <div class="achievement-info">
+              <h3 class="achievement-title">Perfect 5.00 GPA in Secondary School Certificate (SSC)</h3>
+              <span class="achievement-sub">Bindubasini Govt. Boys' High School</span>
+              <p class="achievement-desc">Achieved the highest possible academic distinction (GPA 5.00) in the national board examinations under the Science group.</p>
+            </div>
+          </div>
+
+          <div class="achievement-card">
+            <div class="achievement-icon-box">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+              </svg>
+            </div>
+            <div class="achievement-info">
+              <h3 class="achievement-title">Excellence in Higher Secondary Certificate (HSC)</h3>
+              <span class="achievement-sub">Government Science College, Dhaka</span>
+              <p class="achievement-desc">Secured GPA 4.83 / 5.00 in the national board examination from one of the most prestigious science institutions in Bangladesh.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Connect Footer Section -->
+    <footer id="contact" class="footer-section">
+      <div class="section-container">
+        <div class="footer-card">
+          <div class="footer-left">
+            <span class="section-tag">Let's Connect</span>
+            <h2 class="footer-title">Open for Software Engineering Opportunities & Collaborations</h2>
+            <p class="footer-desc">Feel free to reach out for software engineering roles, internships, academic collaborations, or tech discussions.</p>
+            
+            <div class="contact-details">
+              <a href="mailto:murshedahmedibrahim2001@gmail.com" class="contact-link">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                  <polyline points="22,6 12,13 2,6"/>
+                </svg>
+                <span>murshedahmedibrahim2001@gmail.com</span>
+              </a>
+              <div class="contact-link">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                </svg>
+                <span>+880 1881793409 &bull; +880 1758554031</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-links">
+            <a href="https://github.com/Murshed1603" target="_blank" rel="noopener noreferrer" class="social-btn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/>
+              </svg>
+              <span>GitHub (Murshed1603)</span>
+            </a>
+
+            <a href="https://www.linkedin.com/in/murshed-ahmed-344069253/" target="_blank" rel="noopener noreferrer" class="social-btn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.64 1.64 0 1 0 0-3.28 1.64 1.64 0 0 0 0 3.28m1.39 9.74v-8.37H5.07v8.37h2.78z"/>
+              </svg>
+              <span>LinkedIn Profile</span>
+            </a>
+
+            <a href="https://www.facebook.com/share/1DgEjRfSA7/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" class="social-btn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+              </svg>
+              <span>Facebook Profile</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-copyright">
+          <p>© 2026 Murshed Ahmed &bull; B.Sc. in CSE (Major in Software Engineering) @ American International University - Bangladesh. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Spacing cushion for extended smooth scrubbing -->
+    <div class="scroll-cushion" aria-hidden="true"></div>
+
+  </div>
+
+  <!-- Native Smooth Performance Controller -->
+  <script src="main.js"></script>
+</body>
+</html>

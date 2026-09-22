@@ -1,0 +1,11 @@
+{
+  "name": "murshed-ahmed-portfolio",
+  "version": "1.0.0",
+  "description": "Personal portfolio website of Murshed Ahmed - Computer Science & Engineering student at AIUB.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js"
+  }
+}
